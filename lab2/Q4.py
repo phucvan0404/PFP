@@ -15,7 +15,7 @@ n = get_input("Enter integer number n: ")
 while not valid_int(n):
     n = get_input("Enter integer number n: ")
 n = int(n)
-print(f"{n} in binary format is: {bin(int(n))}")
+print(f"{n} in binary format is: {str(bin(int(n)))[2:]}")
 
 n = get_input("Please re-input n: ")
 _sum = sum([int(i) for i in str(n)])
